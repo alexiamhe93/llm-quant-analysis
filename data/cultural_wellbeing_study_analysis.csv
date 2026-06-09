@@ -1,0 +1,300 @@
+participant_id,student_group,student_group_code,nationality,nationality_code,age,gender,gender_code,year_of_study,wellbeing_mean,belonging_mean,discrimination_mean,open_response
+P011,UK,1,Scotland,16,27,Female,1,1,2.2857142857142856,3.2,2.0,"My flat has a great vibe, but maintenance is slow."
+P082,UK,1,England,3,21,Female,1,1,4.857142857142857,6.2,2.0,Social life is great—lots of events and friends to keep me grounded.
+P143,EU,2,Italy,7,28,Male,2,3,3.7142857142857144,3.6,3.5,"Financial stress is manageable, but I sometimes worry about future costs."
+P050,UK,1,England,3,24,Male,2,1,3.857142857142857,5.6,2.0,I'd love more mental health resources on campus.
+P052,UK,1,England,3,25,Male,2,2,3.2857142857142856,6.6,1.75,Not really
+P108,UK,1,England,3,24,Female,1,2,4.0,6.0,2.25,
+P114,UK,1,Wales,20,27,Female,1,2,2.2857142857142856,5.0,1.3333333333333333,Food costs are a struggle; campus cafes are pricey.
+P003,UK,1,Wales,20,26,Female,1,2,3.4285714285714284,4.6,1.75,No
+P103,UK,1,England,3,26,Male,2,2,3.857142857142857,5.6,2.25,"My flat has a great vibe, but maintenance is slow."
+P242,International,3,Kenya,8,23,Female,1,3,3.4285714285714284,5.6,1.5,"Made friends who've helped me adapt, but systemic bias remains."
+P051,UK,1,England,3,26,Male,2,3,3.857142857142857,4.4,1.25,
+P016,UK,1,Scotland,16,24,Female,1,3,3.857142857142857,5.4,2.0,I've made great friends through clubs and societies.
+P033,UK,1,Scotland,16,28,Female,1,1,4.0,6.2,1.25,Social life is great—lots of events and friends to keep me grounded.
+P153,EU,2,Netherlands,10,24,Male,2,2,2.4285714285714284,3.6,2.5,UK culture feels polite but distant—struggling to feel fully connected.
+P008,UK,1,England,3,26,Female,1,3,4.428571428571429,5.8,2.25,
+P125,UK,1,Scotland,16,21,Male,2,2,3.142857142857143,4.6,2.5,Nothing to add
+P148,EU,2,Sweden,19,24,Male,2,2,3.142857142857143,5.6,2.75,"It's been challenging at times, but I'm proud of how much I've grown."
+P037,UK,1,England,3,26,Female,1,1,2.5714285714285716,4.6,1.6666666666666667,Workshops on time management would be helpful.
+P083,UK,1,England,3,21,Female,1,1,4.333333333333333,7.0,2.5,I feel supported by my peers and staff.
+P243,International,3,China,2,24,Female,1,1,3.2857142857142856,3.4,3.75,I wish there were more culturally inclusive events on campus.
+P299,International,3,Pakistan,13,26,Male,2,2,3.857142857142857,3.8,3.25,"Missing family dearly, especially holidays."
+P135,EU,2,France,4,24,Male,2,1,2.5714285714285716,4.2,2.5,UK culture feels polite but distant—struggling to feel fully connected.
+P199,EU,2,Poland,14,28,Male,2,1,3.857142857142857,5.0,1.0,"The language is a hurdle, but I'm improving thanks to language apps and friends."
+P104,UK,1,Wales,20,28,Female,1,1,3.0,3.8,3.0,I'd like clearer guidelines on assignment deadlines.
+P057,UK,1,Scotland,16,22,Male,2,1,3.7142857142857144,5.0,2.0,"Balancing studies and socialising is tricky, but I prioritise."
+P091,UK,1,England,3,28,Male,2,2,4.285714285714286,5.4,1.5,"Finances are tight, but part-time work covers basics."
+P274,International,3,Malaysia,9,26,Female,1,1,2.857142857142857,6.0,2.0,Struggling with language barriers and feeling excluded in social groups.
+P213,EU,2,Germany,5,32,Female,1,2,3.0,5.0,1.5,"Missing family holidays, but I've made memories with new friends."
+P093,UK,1,England,3,23,Male,2,2,3.5714285714285716,7.0,1.25,I'd like clearer guidelines on assignment deadlines.
+P134,EU,2,France,4,25,Male,2,1,3.7142857142857144,5.2,2.0,Navigating language nuances is tricky—British idioms catch me off guard.
+P275,International,3,China,2,29,Male,2,3,3.2857142857142856,3.4,1.0,"Sometimes feel my culture is exoticized, which is hurtful."
+P064,UK,1,Wales,20,30,Female,1,2,3.2857142857142856,3.8,2.75,Rent and bills are my biggest worry right now.
+P149,EU,2,Italy,7,23,Female,1,2,2.4285714285714284,5.8,1.5,
+P172,EU,2,Italy,7,28,Female,1,2,3.2857142857142856,4.8,2.5,"UK social life feels more formal than in Spain, but I'm learning to navigate it."
+P223,International,3,Nigeria,11,24,Male,2,1,3.7142857142857144,4.6,2.25,"Cultural norms at home clash with university practices, causing confusion."
+P156,EU,2,Germany,5,25,Female,1,1,3.142857142857143,6.0,2.25,"UK social life feels more formal than in Spain, but I'm learning to navigate it."
+P044,UK,1,England,3,26,Male,2,1,4.428571428571429,5.4,1.0,"Group projects are stressful, but teamwork helps."
+P138,EU,2,Germany,5,28,Female,1,2,4.142857142857143,6.6,1.0,Navigating language nuances is tricky—British idioms catch me off guard.
+P238,International,3,China,2,23,Non-Binary,3,1,2.142857142857143,3.0,2.75,Missing family's cooking and traditions deeply affects my mood.
+P285,International,3,China,2,24,Female,1,1,2.142857142857143,3.4,3.5,Microaggressions like 'You're so articulate' make me feel tokenized.
+P107,UK,1,England,3,22,Male,2,1,2.5714285714285716,4.8,2.25,I'd like clearer guidelines on assignment deadlines.
+P027,UK,1,Wales,20,21,Female,1,1,3.142857142857143,5.0,1.75,"Workload's tough, but I manage with time blocks and support groups."
+P276,International,3,Kenya,8,27,Female,1,1,3.0,3.4,2.75,"Celebrate small wins, like passing exams, to stay motivated."
+P097,UK,1,England,3,31,Female,1,1,3.7142857142857144,6.0,1.25,"Balancing studies and socialising is tricky, but I prioritise."
+P224,International,3,India,6,21,Male,2,2,4.285714285714286,6.6,1.5,Microaggressions like 'You're so articulate' make me feel tokenized.
+P004,UK,1,England,3,25,Female,1,1,4.666666666666667,6.0,1.75,Budgeting is a skill I'm still learning.
+P280,International,3,Nigeria,11,24,Non-Binary,3,2,3.2857142857142856,3.0,5.0,Struggling with language barriers and feeling excluded in social groups.
+P045,UK,1,England,3,26,Female,1,1,3.4285714285714284,3.8,1.75,I'd love more mental health resources on campus.
+P260,International,3,Malaysia,9,26,Male,2,2,3.4285714285714284,2.4,3.0,"Cultural norms at home clash with university practices, causing confusion."
+P171,EU,2,Spain,18,23,Male,2,2,4.0,5.6,1.0,
+P157,EU,2,Poland,14,24,Male,2,3,2.2857142857142856,3.6,2.25,"Language barriers are minor—most people are patient, but accents confuse me."
+P261,International,3,Malaysia,9,21,Female,1,3,2.4285714285714284,5.2,3.25,Balancing school and part-time jobs leaves little time for self-care.
+P151,EU,2,France,4,23,Male,2,3,3.3333333333333335,6.4,2.75,"The weather here is brutal, but I've adapted to the rhythm of grey skies."
+P197,EU,2,Sweden,19,21,Female,1,1,3.7142857142857144,4.0,3.25,"The language is a hurdle, but I'm improving thanks to language apps and friends."
+P271,International,3,China,2,25,Male,2,1,3.142857142857143,3.8,2.25,Microaggressions like 'You're so articulate' make me feel tokenized.
+P087,UK,1,England,3,26,Female,1,1,3.142857142857143,4.8,1.6666666666666667,Social life is great—lots of events and friends to keep me grounded.
+P005,UK,1,Scotland,16,22,Female,1,2,3.5714285714285716,5.6,2.0,"Finances are tight, but part-time work covers basics."
+P062,UK,1,Wales,20,26,Female,1,3,3.0,5.6,2.5,Budgeting is a skill I'm still learning.
+P041,UK,1,England,3,27,Male,2,1,4.428571428571429,6.2,1.25,Workshops on time management would be helpful.
+P206,EU,2,Spain,18,24,Non-Binary,3,1,4.0,6.4,2.0,Navigating language nuances is tricky—British idioms catch me off guard.
+P187,EU,2,France,4,27,Female,1,1,4.142857142857143,5.6,1.75,"I'm loving the freedom to explore, but homesickness hits when I'm alone."
+P007,UK,1,England,3,27,Non-Binary,3,1,3.857142857142857,4.6,2.25,Social life is great—lots of events and friends to keep me grounded.
+P077,UK,1,England,3,25,Female,1,1,4.714285714285714,4.4,1.0,"Workload's tough, but I manage with time blocks and support groups."
+P127,UK,1,England,3,27,Non-Binary,3,2,2.0,4.0,2.0,I'm glad my accommodation is near campus.
+P218,International,3,Nigeria,11,21,Male,2,1,4.0,3.2,3.25,"The workload combined with cultural adjustment is exhausting, but I'm pushing through."
+P267,International,3,Brazil,1,26,Female,1,2,2.8333333333333335,2.8,3.75,Juggling visa deadlines and financial aid applications is overwhelming.
+P234,International,3,Kenya,8,25,Female,1,2,3.5714285714285716,3.8,3.25,Financial aid gaps force me to take on more debt.
+P269,International,3,China,2,23,Non-Binary,3,2,2.4285714285714284,3.0,4.5,Sometimes feel my accent makes others dismiss my ideas.
+P270,International,3,India,6,27,Male,2,1,3.857142857142857,5.2,2.25,Microaggressions like 'You're so articulate' make me feel tokenized.
+P165,EU,2,France,4,30,Female,1,1,3.5714285714285716,4.6,2.25,"UK social scenes are quieter than I expected—more laid-back, but I've found great friends."
+P073,UK,1,England,3,24,Female,1,3,3.5714285714285716,5.2,2.25,Everything's manageable—just need to stay organised.
+P163,EU,2,Germany,5,27,Female,1,1,4.142857142857143,4.6,2.0,"Love the campus vibe, but miss my family's cooking."
+P208,EU,2,Sweden,19,27,Female,1,1,3.2857142857142856,4.4,2.5,"Language barriers are minor—most people are patient, but accents confuse me."
+P102,UK,1,England,3,21,Female,1,3,3.5714285714285716,4.6,1.5,Socialising helps me stay focused; I'd do more if I had time.
+P120,UK,1,England,3,25,Female,1,2,3.5714285714285716,4.8,1.75,"My flat has a great vibe, but maintenance is slow."
+P298,International,3,Malaysia,9,29,Female,1,1,3.0,4.2,2.25,"Celebrate small wins, like passing exams, to stay motivated."
+P085,UK,1,Wales,20,24,Male,2,2,2.5714285714285716,3.6,2.0,Not really
+P137,EU,2,France,4,21,Female,1,1,4.714285714285714,5.25,1.0,"I'm loving the freedom to explore, but homesickness hits when I'm alone."
+P296,International,3,Nigeria,11,24,Female,1,2,3.5714285714285716,3.6,4.0,"Made friends who've helped me adapt, but systemic bias remains."
+P047,UK,1,England,3,21,Female,1,2,3.2857142857142856,4.0,4.0,
+P116,UK,1,England,3,23,Female,1,2,4.285714285714286,6.8,1.0,I'd like clearer guidelines on assignment deadlines.
+P207,EU,2,Germany,5,24,Female,1,3,4.285714285714286,4.8,2.0,"UK social scenes are quieter than I expected—more laid-back, but I've found great friends."
+P175,EU,2,Spain,18,28,Non-Binary,3,1,2.0,4.2,3.0,"Financial stress is manageable, but I sometimes worry about future costs."
+P055,UK,1,England,3,22,Female,1,1,2.0,4.0,2.5,"Balancing studies and socialising is tricky, but I prioritise."
+P113,UK,1,Scotland,16,26,Female,1,1,3.7142857142857144,6.0,2.0,I miss home cooking but manage with budget meals.
+P154,EU,2,Poland,14,25,Non-Binary,3,1,3.7142857142857144,4.0,2.25,"Missing my family's celebrations, but I've created new traditions here."
+P067,UK,1,England,3,23,Non-Binary,3,3,3.4285714285714284,5.4,2.0,Not really
+P248,International,3,China,2,28,Female,1,2,2.142857142857143,1.6,2.5,Small acts of kindness from peers make a big difference.
+P038,UK,1,Scotland,16,26,Female,1,1,3.7142857142857144,4.0,1.75,I sometimes feel pressure to overcommit.
+P257,International,3,Malaysia,9,21,Female,1,2,3.5714285714285716,6.4,3.25,"Learned to advocate for myself, which boosts my confidence."
+P013,UK,1,England,3,26,Female,1,1,3.5714285714285716,4.4,1.25,Everything's manageable—just need to stay organised.
+P066,UK,1,Northern Ireland,12,25,Female,1,2,4.285714285714286,5.6,1.75,Food costs are a struggle; campus cafes are pricey.
+P010,UK,1,England,3,22,Female,1,1,3.5714285714285716,5.4,2.25,
+P212,EU,2,France,4,26,Female,1,1,4.571428571428571,6.4,1.0,"Adjusting to UK culture has been smooth, but I miss my family's food and warm evenings at home."
+P145,EU,2,Netherlands,10,25,Male,2,1,2.4285714285714284,4.75,1.0,"The weather here is brutal, but I've adapted to the rhythm of grey skies."
+P025,UK,1,England,3,25,Non-Binary,3,2,4.0,5.6,1.75,No
+P272,International,3,South Korea,17,23,Non-Binary,3,1,2.5714285714285716,4.8,2.0,
+P178,EU,2,Germany,5,22,Male,2,2,3.142857142857143,5.6,1.5,
+P112,UK,1,England,3,26,Male,2,2,4.571428571428571,5.4,1.25,
+P281,International,3,South Korea,17,24,Non-Binary,3,2,2.0,3.4,4.0,
+P215,EU,2,Italy,7,21,Female,1,3,2.2857142857142856,2.6,3.5,"Adjusting to the pace of life here is harder than I thought, but I'm getting better."
+P111,UK,1,England,3,30,Female,1,1,3.142857142857143,4.0,2.75,Social life is great—lots of events and friends to keep me grounded.
+P227,International,3,India,6,27,Male,2,2,2.7142857142857144,4.2,2.75,"It's lonely sometimes, but I remind myself why I'm here."
+P266,International,3,India,6,25,Female,1,2,3.142857142857143,5.0,3.75,"It's lonely sometimes, but I remind myself why I'm here."
+P196,EU,2,Netherlands,10,25,Male,2,1,2.2857142857142856,2.0,2.5,"The weather here is brutal, but I've adapted to the rhythm of grey skies."
+P209,EU,2,Poland,14,29,Female,1,1,2.7142857142857144,3.8,2.25,"Financial stress sometimes creeps in, but part-time work helps."
+P049,UK,1,England,3,22,Female,1,2,3.7142857142857144,5.4,1.5,I feel supported by my peers and staff.
+P017,UK,1,England,3,24,Male,2,1,3.4285714285714284,5.0,1.75,"Group projects are stressful, but teamwork helps."
+P119,UK,1,Wales,20,26,Female,1,2,3.142857142857143,5.2,2.75,Social life is great—lots of events and friends to keep me grounded.
+P246,International,3,Nigeria,11,26,Female,1,1,3.142857142857143,4.6,3.5,Found comfort in online communities but still feel isolated.
+P142,EU,2,Italy,7,23,Female,1,1,4.285714285714286,5.4,1.0,"Financial stress is a constant, but I'm focusing on saving for the future."
+P219,International,3,India,6,28,Male,2,1,2.857142857142857,2.8,3.25,Often feel like an outsider during campus events.
+P015,UK,1,England,3,21,Male,2,1,4.0,5.6,1.5,Not really
+P159,EU,2,France,4,27,Male,2,3,2.5714285714285716,5.0,2.25,"UK social scenes are quieter than I expected—more laid-back, but I've found great friends."
+P034,UK,1,England,3,25,Female,1,2,3.857142857142857,6.75,1.25,I miss home cooking but manage with budget meals.
+P237,International,3,Brazil,1,24,Male,2,1,3.7142857142857144,4.2,3.0,"Celebrate small wins, like passing exams, to stay motivated."
+P031,UK,1,England,3,21,Male,2,2,3.2857142857142856,4.6,2.0,Rent and bills are my biggest worry right now.
+P181,EU,2,Netherlands,10,25,Female,1,2,3.857142857142857,6.2,1.25,"It's been challenging at times, but I'm proud of how much I've grown."
+P122,UK,1,England,3,21,Male,2,1,3.5714285714285716,6.8,1.75,I'm glad my accommodation is near campus.
+P054,UK,1,England,3,28,Male,2,2,3.7142857142857144,5.4,1.0,
+P249,International,3,China,2,26,Female,1,1,2.7142857142857144,5.2,3.25,"Family support via video calls helps, but loneliness persists."
+P289,International,3,Nigeria,11,21,Female,1,2,3.5714285714285716,3.6,3.0,Small acts of kindness from peers make a big difference.
+P086,UK,1,England,3,29,Female,1,2,3.2857142857142856,4.6,1.75,I sometimes feel pressure to overcommit.
+P081,UK,1,England,3,24,Female,1,1,4.714285714285714,5.0,1.0,"My flat has a great vibe, but maintenance is slow."
+P002,UK,1,England,3,28,Male,2,1,2.857142857142857,3.0,1.75,
+P118,UK,1,England,3,24,Male,2,1,2.857142857142857,4.6,1.75,Rent and bills are my biggest worry right now.
+P287,International,3,Nigeria,11,25,Female,1,1,4.571428571428571,5.0,2.5,"It's lonely sometimes, but I remind myself why I'm here."
+P133,EU,2,Poland,14,22,Female,1,2,2.7142857142857144,4.2,2.75,
+P173,EU,2,Portugal,15,24,Male,2,2,3.0,4.2,2.25,"UK social life feels more formal than in Spain, but I'm learning to navigate it."
+P009,UK,1,England,3,25,Male,2,3,3.5714285714285716,5.6,1.5,Budgeting is a skill I'm still learning.
+P019,UK,1,Wales,20,27,Female,1,1,3.5714285714285716,5.2,1.75,No
+P297,International,3,China,2,25,Female,1,3,4.285714285714286,5.4,1.0,"Family expects me to excel academically, adding pressure."
+P129,UK,1,England,3,23,Female,1,1,4.0,6.4,1.0,Workshops on time management would be helpful.
+P231,International,3,Malaysia,9,29,Female,1,3,2.5714285714285716,4.0,3.0,
+P180,EU,2,France,4,30,Male,2,3,2.0,2.8,1.5,"Language nuances trip me up, but I'm getting better with practice."
+P022,UK,1,England,3,27,Female,1,1,3.142857142857143,5.4,2.3333333333333335,Social life is great—lots of events and friends to keep me grounded.
+P006,UK,1,England,3,25,Non-Binary,3,2,4.333333333333333,4.8,1.25,Social life is great—lots of events and friends to keep me grounded.
+P058,UK,1,England,3,24,Male,2,1,3.2857142857142856,4.0,1.5,"Lectures are engaging, but reading lists are overwhelming."
+P259,International,3,Brazil,1,24,Male,2,2,3.7142857142857144,3.2,2.75,"Learned to advocate for myself, which boosts my confidence."
+P203,EU,2,Sweden,19,21,Male,2,1,3.2857142857142856,3.2,2.75,"Financial stress is a constant, but I'm focusing on saving for the future."
+P099,UK,1,Scotland,16,22,Female,1,2,4.0,5.2,2.0,"Workload's tough, but I manage with time blocks and support groups."
+P090,UK,1,England,3,28,Female,1,1,3.5714285714285716,4.4,1.75,Food costs are a struggle; campus cafes are pricey.
+P214,EU,2,Netherlands,10,26,Female,1,1,2.4285714285714284,4.2,1.75,"I'm loving the freedom to explore, but homesickness hits when I'm alone."
+P189,EU,2,Spain,18,25,Male,2,3,3.2857142857142856,4.2,3.0,"Adjusting to UK culture took time, but the support from my university made it easier."
+P072,UK,1,Northern Ireland,12,26,Female,1,2,3.142857142857143,6.4,1.5,"Lectures are engaging, but reading lists are overwhelming."
+P232,International,3,India,6,21,Male,2,1,4.0,4.8,1.5,"Cultural adjustment is tough, but I'm learning to navigate it."
+P068,UK,1,Scotland,16,29,Male,2,2,2.7142857142857144,4.4,2.25,Rent and bills are my biggest worry right now.
+P128,UK,1,England,3,32,Female,1,1,2.857142857142857,3.2,1.75,Nothing to add
+P144,EU,2,France,4,27,Female,1,2,2.5714285714285716,4.2,2.75,"UK social scenes are quieter than I expected—more laid-back, but I've found great friends."
+P071,UK,1,England,3,28,Female,1,1,2.4285714285714284,4.4,1.5,I'd like clearer guidelines on assignment deadlines.
+P278,International,3,China,2,23,Female,1,2,1.8571428571428572,2.6,3.25,"Sometimes feel my culture is exoticized, which is hurtful."
+P140,EU,2,Germany,5,27,Male,2,2,2.5714285714285716,4.0,3.25,"Adjusting to the pace of life here is harder than I thought, but I'm getting better."
+P265,International,3,Pakistan,13,23,Female,1,2,3.142857142857143,2.4,3.75,"Some professors assume I lack motivation, which isn't true."
+P075,UK,1,England,3,32,Male,2,1,3.142857142857143,4.8,1.25,"Balancing studies and socialising is tricky, but I prioritise."
+P158,EU,2,France,4,24,Non-Binary,3,1,3.4285714285714284,4.8,1.75,"Missing my home country's cuisine, but I'm learning to cook my own dishes."
+P217,International,3,China,2,29,Female,1,2,2.2857142857142856,5.0,2.75,Sometimes feel my accent makes others dismiss my ideas.
+P283,International,3,India,6,28,Male,2,2,1.4285714285714286,1.0,4.75,"Discrimination in campus services, like being ignored by staff."
+P204,EU,2,Italy,7,26,Female,1,1,2.5714285714285716,4.6,2.5,"The language is a hurdle, but I'm improving thanks to language apps and friends."
+P040,UK,1,Scotland,16,28,Male,2,1,4.0,5.6,2.5,I feel supported by my peers and staff.
+P288,International,3,China,2,27,Female,1,2,3.7142857142857144,5.2,2.5,
+P264,International,3,India,6,21,Non-Binary,3,1,3.142857142857143,3.4,2.0,Often feel like an outsider during campus events.
+P236,International,3,China,2,24,Male,2,2,3.0,5.6,1.75,Missing family's cooking and traditions deeply affects my mood.
+P039,UK,1,England,3,21,Male,2,3,3.857142857142857,5.2,1.25,No
+P117,UK,1,England,3,25,Female,1,1,4.857142857142857,7.0,1.75,Socialising helps me stay focused; I'd do more if I had time.
+P098,UK,1,England,3,25,Male,2,1,4.857142857142857,3.6,2.25,"Balancing studies and socialising is tricky, but I prioritise."
+P225,International,3,China,2,26,Male,2,1,2.857142857142857,5.0,2.0,
+P176,EU,2,France,4,29,Female,1,2,3.857142857142857,5.2,2.75,"The language is a hurdle, but I'm improving thanks to language apps and friends."
+P023,UK,1,Scotland,16,25,Female,1,1,3.142857142857143,5.8,1.25,Late-night study sessions are common but I try to sleep.
+P155,EU,2,Spain,18,27,Male,2,1,3.7142857142857144,5.2,1.0,UK culture feels polite but distant—struggling to feel fully connected.
+P160,EU,2,Italy,7,23,Female,1,1,3.5714285714285716,7.0,2.0,"The language is a hurdle, but I'm improving thanks to language apps and friends."
+P139,EU,2,Spain,18,22,Female,1,2,3.0,5.4,2.0,"Financial stress is a constant, but I'm focusing on saving for the future."
+P290,International,3,Pakistan,13,24,Female,1,1,3.0,4.0,2.0,
+P026,UK,1,England,3,25,Male,2,1,3.2857142857142856,4.5,1.75,Rent and bills are my biggest worry right now.
+P014,UK,1,England,3,32,Female,1,1,3.0,5.2,2.75,Rent and bills are my biggest worry right now.
+P146,EU,2,Netherlands,10,27,Female,1,2,3.7142857142857144,4.0,1.5,"UK social scenes are quieter than I expected—more laid-back, but I've found great friends."
+P194,EU,2,Germany,5,24,Male,2,2,2.142857142857143,3.4,1.25,"It's been challenging at times, but I'm proud of how much I've grown."
+P200,EU,2,France,4,24,Female,1,1,3.2857142857142856,3.2,2.25,
+P059,UK,1,England,3,25,Female,1,1,3.5,7.0,1.75,"Finances are tight, but part-time work covers basics."
+P226,International,3,Nigeria,11,26,Male,2,1,3.2857142857142856,4.6,4.75,Microaggressions like 'You're so articulate' make me feel tokenized.
+P221,International,3,India,6,21,Female,1,2,4.285714285714286,4.4,2.25,Financial aid gaps force me to take on more debt.
+P065,UK,1,Wales,20,24,Female,1,1,4.428571428571429,4.8,2.25,
+P252,International,3,China,2,23,Male,2,2,2.0,2.6,5.0,"Family expects me to excel academically, adding pressure."
+P205,EU,2,Spain,18,33,Female,1,2,4.714285714285714,4.8,1.5,"Missing family holidays, but I've made memories with new friends."
+P053,UK,1,Scotland,16,28,Non-Binary,3,2,3.857142857142857,5.0,2.25,Food costs are a struggle; campus cafes are pricey.
+P100,UK,1,England,3,26,Female,1,1,3.2857142857142856,5.6,1.25,"My flat has a great vibe, but maintenance is slow."
+P035,UK,1,England,3,24,Female,1,2,4.285714285714286,4.8,2.0,I've made great friends through clubs and societies.
+P079,UK,1,England,3,28,Female,1,2,4.428571428571429,4.0,1.0,Not really
+P293,International,3,China,2,23,Female,1,2,3.142857142857143,3.8,3.0,Microaggressions like 'You're so articulate' make me feel tokenized.
+P121,UK,1,England,3,23,Female,1,1,3.8333333333333335,5.6,1.75,I'd love more mental health resources on campus.
+P185,EU,2,Poland,14,23,Male,2,1,3.7142857142857144,4.4,3.0,"The weather here is brutal, but I've adapted to the rhythm of grey skies."
+P294,International,3,China,2,21,Female,1,2,2.857142857142857,4.8,3.6666666666666665,Found comfort in online communities but still feel isolated.
+P168,EU,2,Netherlands,10,24,Male,2,2,3.0,3.0,2.25,"Language nuances trip me up, but I'm getting better with practice."
+P201,EU,2,France,4,24,Female,1,1,2.4285714285714284,4.2,2.0,"Financial stress is a constant, but I'm focusing on saving for the future."
+P070,UK,1,England,3,25,Female,1,1,4.333333333333333,6.0,1.0,I'm glad my accommodation is near campus.
+P188,EU,2,Spain,18,21,Male,2,3,3.7142857142857144,4.0,2.5,
+P174,EU,2,Poland,14,23,Female,1,2,2.4285714285714284,2.6,2.25,"Missing family holidays, but I've made memories with new friends."
+P029,UK,1,England,3,28,Male,2,1,4.714285714285714,6.4,1.25,I'd like clearer guidelines on assignment deadlines.
+P136,EU,2,Poland,14,24,Female,1,1,3.2857142857142856,5.0,2.25,"The UK's social scene is different, but I've found my niche in student groups."
+P132,EU,2,Spain,18,29,Male,2,3,3.142857142857143,4.8,2.5,"The weather here is brutal, but I've adapted to the rhythm of grey skies."
+P273,International,3,China,2,25,Male,2,3,3.0,4.6,2.75,
+P166,EU,2,Netherlands,10,24,Male,2,2,1.8571428571428572,3.4,2.0,"Financial stress is a constant, but I'm focusing on saving for the future."
+P210,EU,2,Spain,18,27,Female,1,1,2.5714285714285716,1.8,2.25,
+P043,UK,1,England,3,26,Male,2,1,2.6666666666666665,3.4,2.0,Socialising helps me stay focused; I'd do more if I had time.
+P024,UK,1,England,3,33,Male,2,1,3.5714285714285716,4.6,1.0,"Lectures are engaging, but reading lists are overwhelming."
+P092,UK,1,England,3,25,Male,2,2,3.4285714285714284,4.4,3.25,I miss home cooking but manage with budget meals.
+P279,International,3,China,2,23,Female,1,2,3.2857142857142856,4.4,2.0,Microaggressions like 'You're so articulate' make me feel tokenized.
+P183,EU,2,Spain,18,27,Female,1,2,2.5714285714285716,4.4,2.5,"Language nuances trip me up, but I'm getting better with practice."
+P088,UK,1,England,3,22,Female,1,2,3.7142857142857144,5.0,2.0,I sometimes feel pressure to overcommit.
+P042,UK,1,England,3,28,Male,2,1,3.142857142857143,4.4,2.5,
+P101,UK,1,England,3,23,Female,1,1,2.0,4.0,1.25,"Finances are tight, but part-time work covers basics."
+P247,International,3,Nigeria,11,23,Male,2,2,3.0,5.4,1.25,Juggling visa deadlines and financial aid applications is overwhelming.
+P095,UK,1,Scotland,16,22,Female,1,1,3.8333333333333335,4.2,2.0,"Balancing studies and socialising is tricky, but I prioritise."
+P076,UK,1,England,3,25,Non-Binary,3,1,3.4285714285714284,6.2,3.0,I've made great friends through clubs and societies.
+P032,UK,1,England,3,25,Male,2,1,3.7142857142857144,3.8,1.0,"Group projects are stressful, but teamwork helps."
+P191,EU,2,Germany,5,22,Female,1,1,4.0,5.2,1.5,"Financial stress sometimes creeps in, but part-time work helps."
+P192,EU,2,Spain,18,23,Male,2,2,3.857142857142857,4.4,2.0,"Financial stress is manageable, but I sometimes worry about future costs."
+P094,UK,1,England,3,28,Female,1,1,4.142857142857143,4.0,1.75,I'm glad my accommodation is near campus.
+P046,UK,1,England,3,27,Male,2,2,3.857142857142857,5.8,1.5,"Finances are tight, but part-time work covers basics."
+P162,EU,2,Germany,5,25,Male,2,1,3.2857142857142856,4.0,2.25,
+P109,UK,1,England,3,23,Male,2,1,3.2857142857142856,3.4,2.5,Rent and bills are my biggest worry right now.
+P106,UK,1,England,3,23,Female,1,1,4.428571428571429,4.6,1.5,"Lectures are engaging, but reading lists are overwhelming."
+P150,EU,2,Poland,14,27,Male,2,1,3.142857142857143,5.0,3.0,
+P030,UK,1,England,3,21,Male,2,1,3.5714285714285716,5.8,2.25,Socialising helps me stay focused; I'd do more if I had time.
+P182,EU,2,Poland,14,24,Female,1,2,3.5714285714285716,4.6,2.25,
+P110,UK,1,England,3,22,Female,1,1,3.7142857142857144,4.6,1.5,Budgeting is a skill I'm still learning.
+P164,EU,2,Sweden,19,24,Female,1,3,3.0,4.4,3.25,
+P123,UK,1,Scotland,16,25,Female,1,1,4.0,5.6,1.0,I feel supported by my peers and staff.
+P028,UK,1,Wales,20,23,Female,1,1,4.0,5.4,1.5,Socialising helps me stay focused; I'd do more if I had time.
+P105,UK,1,England,3,24,Female,1,2,3.0,4.6,2.75,Not really
+P061,UK,1,England,3,31,Male,2,1,3.142857142857143,3.6,2.25,Nothing to add
+P147,EU,2,Germany,5,24,Male,2,1,3.5714285714285716,5.6,2.25,"Missing my home country's cuisine, but I'm learning to cook my own dishes."
+P084,UK,1,Scotland,16,23,Female,1,2,4.0,5.6,1.25,"My accommodation is modern, but rent's rising fast."
+P235,International,3,Nigeria,11,21,Male,2,2,3.4285714285714284,5.2,2.25,
+P284,International,3,India,6,27,Female,1,1,2.4285714285714284,2.2,3.25,
+P195,EU,2,Spain,18,23,Male,2,3,2.8333333333333335,5.0,2.0,"It's been challenging at times, but I'm proud of how much I've grown."
+P244,International,3,Malaysia,9,24,Female,1,2,3.5714285714285716,5.0,2.25,"Celebrate small wins, like passing exams, to stay motivated."
+P126,UK,1,England,3,26,Male,2,1,3.0,2.2,2.75,Social life is great—lots of events and friends to keep me grounded.
+P167,EU,2,Portugal,15,24,Female,1,2,3.2857142857142856,6.4,1.25,"Financial stress sometimes creeps in, but part-time work helps."
+P241,International,3,Kenya,8,24,Female,1,1,4.428571428571429,2.4,3.25,
+P254,International,3,India,6,23,Female,1,3,3.0,4.0,4.0,"Celebrate small wins, like passing exams, to stay motivated."
+P228,International,3,China,2,23,Female,1,1,3.4285714285714284,3.2,3.5,"Sometimes feel my culture is exoticized, which is hurtful."
+P282,International,3,South Korea,17,22,Female,1,3,2.7142857142857144,4.0,3.25,"Learned to advocate for myself, which boosts my confidence."
+P190,EU,2,Netherlands,10,21,Male,2,2,3.7142857142857144,5.2,2.5,"Missing my family's celebrations, but I've created new traditions here."
+P152,EU,2,Germany,5,29,Female,1,1,2.4285714285714284,3.4,3.25,"It's been challenging at times, but I'm proud of how much I've grown."
+P001,UK,1,England,3,24,Male,2,2,3.0,4.8,1.25,I'd like clearer guidelines on assignment deadlines.
+P268,International,3,China,2,24,Male,2,1,3.857142857142857,5.4,2.5,"Some professors assume I lack motivation, which isn't true."
+P256,International,3,Brazil,1,29,Male,2,2,4.428571428571429,5.4,2.0,"Cultural adjustment is tough, but I'm learning to navigate it."
+P277,International,3,India,6,28,Female,1,2,1.7142857142857142,2.4,2.0,Microaggressions like 'You're so articulate' make me feel tokenized.
+P263,International,3,Nigeria,11,26,Female,1,2,3.4285714285714284,3.0,2.75,"Discrimination in campus services, like being ignored by staff."
+P300,International,3,Pakistan,13,25,Male,2,2,4.428571428571429,3.6,2.5,"Cultural adjustment is tough, but I'm learning to navigate it."
+P089,UK,1,England,3,22,Female,1,2,3.7142857142857144,5.2,2.0,
+P078,UK,1,England,3,25,Female,1,3,3.4285714285714284,6.4,1.75,Socialising helps me stay focused; I'd do more if I had time.
+P124,UK,1,Wales,20,24,Female,1,1,2.7142857142857144,5.2,2.25,I feel supported by my peers and staff.
+P096,UK,1,England,3,26,Female,1,1,4.0,5.75,1.5,
+P295,International,3,China,2,21,Male,2,3,3.4285714285714284,3.6,1.75,
+P012,UK,1,England,3,21,Male,2,2,3.7142857142857144,6.75,1.75,Budgeting is a skill I'm still learning.
+P115,UK,1,Scotland,16,27,Female,1,1,3.142857142857143,6.0,2.0,"Finances are tight, but part-time work covers basics."
+P258,International,3,India,6,23,Male,2,2,2.0,3.4,3.5,"Family expects me to excel academically, adding pressure."
+P220,International,3,Pakistan,13,21,Male,2,1,2.857142857142857,4.2,4.0,"It's lonely sometimes, but I remind myself why I'm here."
+P253,International,3,Pakistan,13,21,Female,1,2,3.857142857142857,5.2,2.75,"The workload combined with cultural adjustment is exhausting, but I'm pushing through."
+P286,International,3,India,6,26,Female,1,2,2.857142857142857,3.8,2.75,
+P262,International,3,Pakistan,13,21,Male,2,1,2.5714285714285716,2.6,3.25,
+P179,EU,2,Poland,14,23,Female,1,3,4.571428571428571,5.6,1.75,"Adjusting to UK culture has been smooth, but I miss my family's food and warm evenings at home."
+P020,UK,1,Northern Ireland,12,26,Female,1,1,2.5714285714285716,4.4,2.25,Not really
+P170,EU,2,Spain,18,22,Non-Binary,3,3,2.7142857142857144,4.2,2.25,"Missing family holidays, but I've made memories with new friends."
+P240,International,3,Malaysia,9,26,Male,2,1,2.5714285714285716,2.4,3.25,"Missing family dearly, especially holidays."
+P161,EU,2,Germany,5,24,Female,1,1,3.4285714285714284,4.6,3.0,"Adjusting to the pace of life here is harder than I thought, but I'm getting better."
+P074,UK,1,England,3,28,Female,1,1,3.5714285714285716,5.8,1.0,I sometimes feel pressure to overcommit.
+P018,UK,1,England,3,23,Female,1,2,2.7142857142857144,4.2,1.5,Nothing to add
+P063,UK,1,England,3,23,Female,1,2,3.857142857142857,3.8,1.25,I miss home cooking but manage with budget meals.
+P250,International,3,China,2,28,Non-Binary,3,1,3.0,3.0,2.75,My home country's expectations weigh heavily on my mental health.
+P229,International,3,Nigeria,11,24,Male,2,2,2.5714285714285716,4.6,2.5,I wish there were more culturally inclusive events on campus.
+P239,International,3,Malaysia,9,25,Female,1,1,2.7142857142857144,2.8,2.0,"Missing family dearly, especially holidays."
+P230,International,3,Nigeria,11,24,Female,1,3,2.142857142857143,2.6,3.75,
+P048,UK,1,England,3,21,Female,1,2,3.142857142857143,5.4,1.0,"Workload's tough, but I manage with time blocks and support groups."
+P251,International,3,China,2,22,Male,2,2,3.142857142857143,3.0,3.0,I wish there were more culturally inclusive events on campus.
+P080,UK,1,Scotland,16,23,Female,1,1,3.5714285714285716,4.8,1.0,Nothing to add
+P291,International,3,China,2,24,Female,1,2,2.4285714285714284,4.0,2.5,
+P021,UK,1,England,3,25,Non-Binary,3,3,4.166666666666667,7.0,1.25,"Workload's tough, but I manage with time blocks and support groups."
+P141,EU,2,Sweden,19,23,Male,2,3,3.142857142857143,4.2,1.75,"UK social life feels more formal than in Spain, but I'm learning to navigate it."
+P193,EU,2,Sweden,19,26,Female,1,1,3.4285714285714284,3.4,3.25,"Adjusting to UK culture has been smooth, but I miss my family's food and warm evenings at home."
+P131,EU,2,Germany,5,25,Female,1,1,4.571428571428571,5.8,1.0,"UK social life feels more formal than in Spain, but I'm learning to navigate it."
+P216,International,3,India,6,28,Female,1,2,3.857142857142857,2.8,3.0,Struggling with language barriers and feeling excluded in social groups.
+P245,International,3,India,6,21,Female,1,3,2.5714285714285716,3.6,3.25,"Financial stress forces me to work extra hours, affecting study time."
+P060,UK,1,Northern Ireland,12,21,Female,1,1,3.5714285714285716,5.6,1.75,Workshops on time management would be helpful.
+P222,International,3,China,2,24,Female,1,1,3.5714285714285716,3.0,2.25,"Some classmates make assumptions about my background, which is frustrating."
+P177,EU,2,Sweden,19,28,Male,2,1,3.5714285714285716,4.4,3.25,"The weather here is brutal, but I've adapted to the rhythm of grey skies."
+P056,UK,1,England,3,25,Male,2,1,3.857142857142857,6.0,2.0,I sometimes feel pressure to overcommit.
+P292,International,3,China,2,26,Male,2,2,3.5714285714285716,2.4,1.75,Juggling visa deadlines and financial aid applications is overwhelming.
+P255,International,3,Malaysia,9,28,Male,2,1,2.7142857142857144,3.4,3.75,Missing family's cooking and traditions deeply affects my mood.
+P198,EU,2,Italy,7,26,Female,1,1,4.142857142857143,4.0,2.75,"Financial stress sometimes creeps in, but part-time work helps."
+P069,UK,1,Scotland,16,24,Male,2,2,5.0,6.2,1.0,"My accommodation is modern, but rent's rising fast."
+P211,EU,2,France,4,21,Non-Binary,3,2,3.5714285714285716,3.4,4.25,"The language is a hurdle, but I'm improving thanks to language apps and friends."
+P233,International,3,China,2,22,Female,1,1,4.142857142857143,5.0,1.0,"Made friends who've helped me adapt, but systemic bias remains."
+P202,EU,2,Portugal,15,26,Male,2,1,3.142857142857143,5.6,1.75,"Adjusting to UK culture took time, but the support from my university made it easier."
+P169,EU,2,Spain,18,21,Male,2,2,3.857142857142857,7.0,1.0,"Missing my family's celebrations, but I've created new traditions here."
+P186,EU,2,Spain,18,25,Male,2,1,3.4285714285714284,4.0,2.0,"Financial stress is a constant, but I'm focusing on saving for the future."
+P036,UK,1,England,3,21,Female,1,1,3.7142857142857144,4.8,1.25,"Finances are tight, but part-time work covers basics."
+P130,UK,1,Wales,20,23,Female,1,1,3.857142857142857,4.0,2.0,I'd love more mental health resources on campus.

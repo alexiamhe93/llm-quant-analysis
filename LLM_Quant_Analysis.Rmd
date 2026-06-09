@@ -1,0 +1,347 @@
+---
+title: "LLMs for Quantitative Analysis — Worked Solutions"
+author: "Dr Alex Goddard"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    number_sections: true
+    theme: flatly
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE,
+                      fig.align = "center", fig.width = 8, fig.height = 4.8)
+library(readr)
+library(dplyr)
+library(stringr)
+library(ggplot2)
+library(effectsize)
+
+PAL <- c(UK = "#4C72B0", EU = "#DD8452", International = "#55A868")
+theme_set(theme_minimal(base_size = 12))
+```
+
+> **The core principle: fail fast.** It is better to *continually inspect* the
+> data and your results than to try to write one perfect prompt. Work
+> step-by-step, run the code, look at what happens, and repeat. An LLM will
+> happily give you a confident, wrong answer — your job is to catch it.
+
+This notebook is the worked solution to the two data tasks: **cleaning** a raw
+Qualtrics export, then **analysing** it. All code is R. Each step shows the
+*problem*, how to *detect* it, and the *fix*.
+
+---
+
+# Part 1 — Data Cleaning
+
+A survey on the wellbeing of university students, exported straight from
+Qualtrics. Our goal: get from the raw export to a dataset that is ready for
+analysis. There are **10 problems** — five with *rows*, five with *data entry*.
+
+```{r load}
+# Read EVERYTHING as text first — the embedded label row would otherwise break
+# the column types.
+raw <- read_csv("data/cultural_wellbeing_study.csv",
+                col_types = cols(.default = col_character()))
+
+dim(raw)   # 306 rows (incl. a label row) x 36 columns
+```
+
+A first look shows the trouble: row 1 is question text, gender is encoded every
+which way, age contains "years", and the scale items hold odd values.
+
+```{r peek}
+raw[1:3, c("participant_id", "Status", "Finished", "gender", "age", "w1", "w4")]
+```
+
+```{r scale-cols}
+# The 16 survey items: 7 wellbeing (1-5), 5 belonging (1-7), 4 discrimination (1-5)
+W <- paste0("w", 1:7)
+B <- paste0("b", 1:5)
+D <- paste0("d", 1:4)
+scale_cols <- c(W, B, D)
+
+df <- raw   # we will whittle `df` down step by step
+```
+
+## Row problems (5)
+
+We track the **row count** after each fix. Raw = 306; target = 299.
+
+### Problem 1 — Row 0 is question text
+
+*Detection:* visual inspection — the first data row contains the survey
+questions, not a participant. *Fix:* drop it.
+
+```{r row1}
+df <- df %>% filter(participant_id != "Participant ID")
+nrow(df)   # 305
+```
+
+### Problem 2 — Three participants did not finish
+
+*Detection:* the `Status` / `Finished` / `Duration` columns. One row is a
+researcher **preview** (a 28-second "response"), and two participants quit
+part-way (`Finished == "False"`). *Fix:* keep only completed, real responses.
+
+```{r row2}
+table(df$Status, df$Finished)
+
+df <- df %>% filter(Status == "IP Address", Finished == "True")
+nrow(df)   # 302
+```
+
+### Problem 3 — Attention-check failure
+
+The survey asked respondents to "select the number four". *Detection:* anyone
+not answering 4. *Fix:* drop them.
+
+```{r row3}
+df <- df %>% mutate(attention_check = as.numeric(attention_check))
+table(df$attention_check)
+
+df <- df %>% filter(attention_check == 4)
+nrow(df)   # 301
+```
+
+### Problem 4 — A straight-line responder (P301)
+
+One participant gave the **same answer to all 16 items**. They pass every other
+check — the only way to catch them is to compute the **standard deviation across
+each row**: a row SD of 0 means no variation at all.
+
+```{r row4}
+# Items must be numeric to compute an SD ("N/A" strings become NA here)
+df <- df %>% mutate(across(all_of(scale_cols), as.numeric))
+
+row_sd <- apply(df[scale_cols], 1, sd, na.rm = TRUE)
+df$participant_id[which(row_sd == 0)]            # P301
+
+df <- df[!(!is.na(row_sd) & row_sd == 0), ]
+nrow(df)   # 300
+```
+
+### Problem 5 — A duplicate participant (P047)
+
+*Detection:* a repeated `participant_id`. *Fix:* keep the first occurrence.
+
+```{r row5}
+df$participant_id[duplicated(df$participant_id)]  # P047
+
+df <- df %>% distinct(participant_id, .keep_all = TRUE)
+nrow(df)   # 299  <- final N
+```
+
+## Data-entry problems (5)
+
+These are the same five issues from the slide. We clear the **missing-value
+codes and out-of-range values first**, so that the reliability check in the last
+step is meaningful.
+
+### Problem 6 — Missing data coded three different ways
+
+Missingness hides behind `-99`, the string `"N/A"`, and true blanks. *Fix:*
+unify them all to `NA`. (The `"N/A"` strings already became `NA` when we
+converted the items to numeric above; here we mop up the `-99` sentinels.)
+
+```{r data6}
+sum(df[scale_cols] == -99, na.rm = TRUE)         # how many -99 sentinels?
+
+df <- df %>% mutate(across(all_of(scale_cols), ~ na_if(.x, -99)))
+sum(is.na(df[scale_cols]))                        # total missing now unified
+```
+
+### Problem 7 — Out-of-range values
+
+A `6` appears on the 1–5 wellbeing items, a `0` on the 1–5 discrimination
+items. *Detection:* inspect each item's range. *Fix:* set impossible values to
+`NA`.
+
+```{r data7}
+scale_max <- c(setNames(rep(5, 7), W), setNames(rep(7, 5), B), setNames(rep(5, 4), D))
+for (c in scale_cols) {
+  df[[c]][df[[c]] < 1 | df[[c]] > scale_max[[c]]] <- NA
+}
+# confirm every item is now within range
+sapply(scale_cols, function(c) range(df[[c]], na.rm = TRUE))[, 1:6]
+```
+
+### Problem 8 — Inconsistent gender encoding
+
+*Detection:* visual inspection — `F`, `f`, `female`, `FEMALE`, `M`, `m`, `NB`…
+*Fix:* a standardised mapping.
+
+```{r data8}
+table(df$gender)
+
+df <- df %>%
+  mutate(gender = str_to_lower(str_trim(gender)),
+         gender = recode(gender,
+                         "f" = "female",      "female" = "female",
+                         "m" = "male",        "male"   = "male",
+                         "nb" = "non-binary", "non binary" = "non-binary",
+                         "non-binary" = "non-binary"),
+         gender = str_to_title(gender))
+table(df$gender)
+```
+
+### Problem 9 — Age stored as text ("24 years")
+
+*Fix:* strip the word "years" and convert to a number.
+
+```{r data9}
+df <- df %>% mutate(age = as.numeric(str_remove(age, "\\s*years?")))
+range(df$age)
+```
+
+### Problem 10 — Reverse-coded items (w4 and w6)
+
+Two wellbeing items are **negatively worded** ("struggling to deal with
+problems", "feeling distant"), so a high score means *low* wellbeing. Averaged
+as-is, the scale is incoherent. *Detection:* Cronbach's α is very low; those
+items correlate negatively with the rest. *Fix:* reverse-score them (`6 - old`).
+
+```{r data10}
+cronbach <- function(mat) {
+  mat <- mat[complete.cases(mat), , drop = FALSE]; k <- ncol(mat)
+  round((k / (k - 1)) * (1 - sum(apply(mat, 2, var)) / var(rowSums(mat))), 2)
+}
+
+cronbach(as.matrix(df[W]))               # BEFORE: ~0.21  (unacceptable)
+
+df <- df %>% mutate(w4 = 6 - w4, w6 = 6 - w6)
+
+cronbach(as.matrix(df[W]))               # AFTER:  ~0.89  (excellent)
+```
+
+## Build aggregate scores and save
+
+With the items clean and reverse-coded, average them into one score per scale.
+
+```{r composites}
+df <- df %>%
+  mutate(year_of_study = as.numeric(year_of_study),
+         wellbeing      = rowMeans(across(all_of(W)), na.rm = TRUE),
+         belonging      = rowMeans(across(all_of(B)), na.rm = TRUE),
+         discrimination = rowMeans(across(all_of(D)), na.rm = TRUE))
+
+# reliability of all three scales
+c(wellbeing      = cronbach(as.matrix(df[W])),
+  belonging      = cronbach(as.matrix(df[B])),
+  discrimination = cronbach(as.matrix(df[D])))
+```
+
+```{r save, eval=FALSE}
+# Save the cleaned dataset (already provided in /data for the analysis task)
+write_csv(df, "data/cultural_wellbeing_study_clean.csv")
+```
+
+**Done — N = 299, clean and analysis-ready.** Note how much harder the cleaning
+was than the analysis that follows.
+
+---
+
+# Part 2 — Data Analysis
+
+> For this task the data already **contains aggregate scores** and you may
+> **assume data integrity is good**. Three questions, worked one-by-one.
+
+```{r prep-analysis}
+df$group  <- factor(df$group,  levels = c("UK", "EU", "International"))
+df$gender <- factor(df$gender, levels = c("Female", "Male", "Non-Binary"))
+
+# Descriptives by group
+df %>% group_by(group) %>%
+  summarise(across(c(wellbeing, belonging, discrimination),
+                   list(mean = ~round(mean(.x), 2), sd = ~round(sd(.x), 2))),
+            n = n())
+```
+
+## Q1 — Do student groups differ in wellbeing?
+
+A one-way **ANOVA** asks whether the three group means differ; **Tukey HSD**
+tells us *which* pairs differ.
+
+```{r q1-anova}
+aov_wb <- aov(wellbeing ~ group, data = df)
+summary(aov_wb)
+eta_squared(aov_wb)
+TukeyHSD(aov_wb)
+```
+
+```{r q1-d}
+# Cohen's d for each pair
+cohens_d <- function(a, b) {
+  x <- df$wellbeing[df$group == a]; y <- df$wellbeing[df$group == b]
+  round((mean(x) - mean(y)) / sqrt((var(x) + var(y)) / 2), 2)
+}
+c(`UK vs Intl` = cohens_d("UK", "International"),
+  `UK vs EU`   = cohens_d("UK", "EU"),
+  `EU vs Intl` = cohens_d("EU", "International"))
+```
+
+```{r q1-plot, fig.height=4.5}
+ggplot(df, aes(group, wellbeing, fill = group)) +
+  geom_violin(alpha = .55, colour = NA) +
+  geom_boxplot(width = .15, outlier.size = .6) +
+  scale_fill_manual(values = PAL, guide = "none") +
+  labs(title = "Wellbeing by student group", x = NULL, y = "Wellbeing (1-5)")
+```
+
+**Finding.** F(2, 296) = 13.5, *p* < .001, η² = 0.08 (medium). Means: UK 3.59 >
+EU 3.28 > International 3.12. UK differs from both EU (*p* = .003, *d* = 0.46)
+and International (*p* < .001, *d* = 0.70) — **but EU vs International is *not*
+significant** (*p* = .28). A significant ANOVA does not mean every pair differs.
+
+## Q2 — Is perceived discrimination related to wellbeing?
+
+```{r q2-cor}
+round(cor(df[c("wellbeing", "belonging", "discrimination")]), 2)
+
+summary(lm(wellbeing ~ discrimination, data = df))
+```
+
+```{r q2-plot, fig.height=4.8}
+ggplot(df, aes(discrimination, wellbeing)) +
+  geom_point(aes(colour = group), alpha = .5) +
+  geom_smooth(method = "lm", colour = "black", linewidth = .8) +
+  scale_colour_manual(values = PAL, name = NULL) +
+  labs(title = "Wellbeing vs perceived discrimination",
+       x = "Perceived discrimination (mean)", y = "Wellbeing (mean)")
+```
+
+**Finding.** r(wellbeing, discrimination) = −0.41; r(wellbeing, belonging) =
++0.51; r(belonging, discrimination) = −0.52 (all *p* < .001). In a simple
+regression, each one-point rise in discrimination predicts a **0.34-point drop**
+in wellbeing.
+
+## Q3 — What are the key predictors of wellbeing?
+
+Put everything in one **multiple regression**: the two other scales, group, and
+the demographics (age, gender, year).
+
+```{r q3-model}
+m <- lm(wellbeing ~ belonging + discrimination + group + age + gender + year_of_study,
+        data = df)
+summary(m)
+```
+
+**Finding.** Only **belonging** (*B* = +0.24, *p* < .001) and **discrimination**
+(*B* = −0.16, *p* = .002) predict wellbeing. Once they are in the model, **group
+is no longer significant**, and none of the demographics matter. Adjusted
+R² = 0.29. The group differences in Q1 are largely *explained* by belonging and
+discrimination — group membership was a proxy for the underlying experience.
+
+---
+
+# Conclusion
+
+- **Fail fast.** Continually inspect the data and results rather than perfecting
+  a single prompt.
+- **Work step-by-step** so you understand what each fix is doing.
+- An LLM can also help **check the assumptions** of these tests (not covered
+  here).
+- **Data cleaning is harder than the analysis** — and it is where most errors,
+  and most of an LLM's confident mistakes, are born.
